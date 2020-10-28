@@ -1,0 +1,38 @@
+
+throw: 
+
+	it has nothing to do with handling exception
+	throw KEYWORD can only be use to manually throw exception
+	you can use throw keyword to get any exception (check or uncheck)
+	After throw statement, we cannot give anymore statements. 
+	
+
+
+	object: new ExceptionClass();
+	throw:
+		throw objectOfException
+		
+package day53_finalKeyword;
+//custom exception creation
+public class BreaktimeException extends RuntimeException { //custom unchecked exception
+
+}
+class Test{
+    public static void main(String[] args) {
+      //  throw new RuntimeException();
+        throw new BreaktimeException();
+    }
+}
+
+
+
+
+Exception Handling - continue
+
+2. throws: handle exceptions temporary
+
+	used for handling checked exception
+	indicates that method throws an exception
+	MUST be used in method signature
+
+	the caller of the method is responsible to handle the exception
